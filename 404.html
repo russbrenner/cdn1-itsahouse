@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Fastly-Powered Static Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .error-code {
+            font-size: 120px;
+            color: #FF282D;
+            margin: 0;
+            line-height: 1;
+        }
+        .error-message {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .suggestions {
+            background-color: #e9f7ff;
+            border-left: 4px solid #0077be;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .back-home {
+            display: inline-block;
+            background-color: #FF282D;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .back-home:hover {
+            background-color: #D61E23;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-message">Oops! Page Not Found</h2>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        
+        <div class="suggestions">
+            <h3>Here are some helpful links:</h3>
+            <ul>
+                <li><a href="/">Home Page</a></li>
+                <li><a href="/features">Fastly CDN Features</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <p>If you believe this is a mistake, please contact our support team.</p>
+        
+        <a href="/" class="back-home">Go Back Home</a>
+    </div>
+    <script>
+        // Log 404 errors to your analytics or error tracking system
+        console.log('404 error occurred for page: ' + window.location.pathname);
+    </script>
+</body>
+</html>
